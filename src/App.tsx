@@ -48,7 +48,7 @@ function App() {
 	return (
 		<>
 			<h1>{((coordinates.speed || 0) * 3.600000).toFixed(1)} km/h</h1>
-			<h1>{Math.ceil(((coordinates.speed || 0) * 60))} km/h</h1>
+			<h1>{Math.ceil(((coordinates.speed || 0) * 60))} m/m</h1>
 		</>
 	)
 }
