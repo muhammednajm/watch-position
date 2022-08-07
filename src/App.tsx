@@ -25,7 +25,7 @@ function App() {
 
 		watchId = navigator.geolocation.watchPosition(successCallback, errorCallback, {
 			enableHighAccuracy: true,
-			timeout: 1,
+			timeout: 1000,
 			maximumAge: 0,
 		})
 
