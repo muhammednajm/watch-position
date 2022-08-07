@@ -59,6 +59,10 @@ function App() {
 			<p>longitude: {coordinates.longitude || 'NULL'}</p>
 			<p>speed: {coordinates.speed || 'NULL'}</p>
 			<p>request count: {requestCount}</p>
+
+			{coordinates.speed && (
+				<h1>{coordinates.speed * 3.600000}km/h</h1>
+			)}
 		</>
 	)
 }
