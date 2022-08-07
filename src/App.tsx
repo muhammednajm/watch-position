@@ -50,18 +50,17 @@ function App() {
 
 	return (
 		<>
-			<h1>navigator.geolocation.watchPosition debug</h1> 
+			<h1>Speed test</h1> 
 			<p>accuracy: {coordinates.accuracy || 'NULL'}</p>
 			<p>altitude: {coordinates.altitude || 'NULL'}</p>
 			<p>altitudeAccuracy: {coordinates.altitudeAccuracy || 'NULL'}</p>
 			<p>heading: {coordinates.heading || 'NULL'}</p>
 			<p>latitude: {coordinates.latitude || 'NULL'}</p>
 			<p>longitude: {coordinates.longitude || 'NULL'}</p>
-			<p>speed: {coordinates.speed || 'NULL'}</p>
 			<p>request count: {requestCount}</p>
 
 			{coordinates.speed && (
-				<h1>{coordinates.speed * 3.600000}km/h</h1>
+				<h1>{(coordinates.speed * 3.600000).toFixed(2)} km/h</h1>
 			)}
 		</>
 	)
